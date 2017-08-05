@@ -46,9 +46,9 @@ def read_img(img_file, size = (224, 224), logging = False):
     for img_path in img_file:
         img = Image.open(img_path)
         
-        if opt.crop and (img_path.split('/')[-1] in dog_crop_img):
-            img = img.crop(dog_crop[img_path.split('/')[-1]][:])
-            # print(img_path)
+        # if opt.crop and (img_path.split('/')[-1] in dog_crop_img):
+        #    img = img.crop(dog_crop[img_path.split('/')[-1]][:])
+        # print(img_path)
         imgs.append(img)
     return imgs
 
