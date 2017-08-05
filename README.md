@@ -18,9 +18,7 @@
    # 使用提取的特征跑二层模型
    python torch_l2.py
    ```
-
-   ​
-
+   
 2. 所用框架: Pytorch(拒绝keras和TensorSlow框架).
 
 ![](./feature/model.png)
