@@ -37,8 +37,8 @@ val['img'] = '../../input/test1/' + val['img'] + '.jpg'
 train = train[~train['img'].duplicated(keep = False)]
 train_val = pd.concat([train, val], axis = 0, ignore_index = True)
 
-dog_crop = h5py.File('./yolo_kuhuang.h5', 'r')
-dog_crop_img = dog_crop.keys()
+# dog_crop = h5py.File('./yolo_kuhuang.h5', 'r')
+# dog_crop_img = dog_crop.keys()
 
 # 读取目标img文件，归一化到指定大小
 def read_img(img_file, size = (224, 224), logging = False):
